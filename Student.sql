@@ -104,6 +104,7 @@ CREATE TABLE Course_registration (
 	Grade	VARCHAR(1) NOT NULL,
 	Sem	TINYINT NOT NULL,
 	Year	SMALLINT NOT NULL,
+	Type_Taken TEXT NOT NULL,
 	FOREIGN KEY(Course_code) REFERENCES Course(Course_code),
 	FOREIGN KEY(Roll_no) REFERENCES Student(Roll_no),
 	FOREIGN KEY(Prof_id) REFERENCES Professor(Prof_id),
